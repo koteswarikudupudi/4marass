@@ -1,0 +1,21 @@
+#to count the duplicate elements in the list
+n=int(input('how many elements you want to enter:'))
+l=input().split()
+t=[]
+x=[]
+c=0
+for i in l:
+    t.append(int(i))
+print(t)    
+for i in t:
+    if i not in x:
+        x.append(i)
+    else:
+        c=c+1
+print(c)
+'''
+output:
+how many elements you want to enter:6
+1 2 1 2 12 5
+[1, 2, 1, 2, 12, 5]
+2'''
